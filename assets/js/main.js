@@ -37,7 +37,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
-  strings: ["Full Stack Developer", "Software Engineer", "React Specialist"],
+  strings: ["Full Stack Developer", "Computer Engineer", "React Developer","Laravel Developer"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
