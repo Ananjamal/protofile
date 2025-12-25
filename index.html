@@ -13,7 +13,7 @@
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="assets/images/anan1.png" type="image/x-icon">
 
-    <title>Portfolio | Anan Jamal Abu Tawahena</title>
+    <title>Anan Jamal | Full Stack Developer</title>
 </head>
 <body>
     <div class="container">
@@ -27,28 +27,29 @@
                 <ul class="nav_menu_list">
                     <li class="nav_list">
                         <a href="#home" class="nav-link active-link">Home</a>
-                        <div class="circle"></div>
                     </li>
                     <li class="nav_list">
                         <a href="#about" class="nav-link">About</a>
-                        <div class="circle"></div>
                     </li>
                     <li class="nav_list">
                         <a href="#projects" class="nav-link">Projects</a>
-                        <div class="circle"></div>
                     </li>
                     <li class="nav_list">
                         <a href="#contact" class="nav-link">Contact</a>
-                        <div class="circle"></div>
                     </li>
                 </ul>
+                <!-- Theme Toggle -->
+                <div class="theme-btn">
+                    <i class="uil uil-moon" id="theme-button"></i>
+                </div>
             </div>
             <div class="nav-button">
                 <button class="btn blue-btn" id="downloadBtn1">
                     Download CV 
                     <i class="uil uil-file-alt"></i>
                     <span id="spinner1" style="display: none;" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                </button>             </div>
+                </button>
+            </div>
             <div class="nav-menu-btn">
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
             </div>
@@ -58,24 +59,26 @@
     <main class="wrapper">
         <!-- -------------- FEATURED BOX ---------------- -->
         <section class="featured-box" id="home">
+            <!-- Hero Background Shapes -->
+            <div class="hero-bg-shape shape-1"></div>
+            <div class="hero-bg-shape shape-2"></div>
+
             <div class="featured-text">
                 <div class="featured-text-card">
-                    <span>Eng.Anan Jamal Abu Tawahena</span>
+                    <span>Hello, I am</span>
                 </div>
                 <div class="featured-name">
-                    <p>I'm <span class="typedText"></span></p>
+                    <p>Anan Abu Tawahena <br> <span class="typedText"></span></p>
                 </div>
                 <div class="featured-text-info">
-                    <p>Experienced developer specializing in Laravel, React, and API integrations, with a passion for building user-friendly and efficient web applications.</p>
+                    <p>Experienced developer specializing in Laravel, React, and API integrations. I build accessible, pixel-perfect, and performant web applications.</p>
                 </div>
                 <div class="featured-text-btn">
-                    <!-- <button class="btn blue-btn">Hire Me</button> -->
                     <button class="btn blue-btn" id="downloadBtn2">
                         Download CV 
                         <i class="uil uil-file-alt"></i>
                         <span id="spinner2" style="display: none;" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     </button>
-                    <a id="downloadLink" href="./ABU TAWAHENA_ANAN_ResumeCV.pdf" download style="display: none;"></a>
                 </div>
                 <div class="social_icons">
                     <div class="icon">
@@ -84,36 +87,27 @@
                         </a>
                     </div>
                     <div class="icon">
-                        <a style="margin-bottom: 5px;" href="https://www.linkedin.com/in/anan-abu-tawahena-016010280" target="_blank">
+                        <a href="https://www.linkedin.com/in/anan-abu-tawahena-016010280" target="_blank">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
                     </div>
-                    
                     <div class="icon">
                         <a href="https://github.com/Ananjamal" target="_blank">
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
                     <div class="icon">
-                        <a style="margin-top: 5px;" href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?mp_source=share" target="_blank">
+                        <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?mp_source=share" target="_blank">
                             <i class="fa-brands fa-upwork"></i>
-                            </a>
+                        </a>
                     </div>
                 </div>
-                
-                
             </div>
             <div class="featured-image">
                 <div class="image">
-                    <img src="assets/images/anan1.png" alt="avatar">
+                    <img src="assets/images/ananPro.png" alt="Anan Jamal">
                 </div>
             </div>
-            <!-- <div class="scroll-icon-box">
-                <a href="#about" class="scroll-btn">
-                    <i class="uil uil-mouse-alt"></i>
-                    <p>Scroll Down</p>
-                </a>
-            </div> -->
         </section>
 
         <!-- -------------- ABOUT BOX ---------------- -->
@@ -124,16 +118,14 @@
             <div class="row">
                 <div class="col">
                     <div class="about-info">
-                        <h3>My introduction</h3>
-                        <p>I am a Computer Engineer skilled in Laravel, React, and RESTful API development. I also have extensive experience in frontend and backend technologies, enabling me to deliver full-stack web solutions.</p>
+                        <h3>My Introduction</h3>
+                        <p>I am a Computer Engineer skilled in Laravel, React, and RESTful API development. With extensive experience in both frontend and backend technologies, I deliver robust full-stack web solutions that solve real-world problems.</p>
                         <div class="about-btn">
                             <button class="btn blue-btn" id="downloadBtn3">
                                 Download CV 
                                 <i class="uil uil-file-alt"></i>
                                 <span id="spinner3" style="display: none;" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             </button> 
-                            <a id="downloadLink" href="./CV_ANAN ABU TAWAHENA.pdf" download style="display: none;"></a>
-
                         </div>
                     </div>
                 </div>
@@ -143,11 +135,12 @@
                             <h3>Frontend</h3>
                         </div>
                         <div class="skills-list">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Bootstrap</span>
-                            <span>React</span>
+                            <span><i class="uil uil-html5"></i> HTML5</span>
+                            <span><i class="uil uil-css3-simple"></i> CSS3</span>
+                            <span><i class="uil uil-java-script"></i> JavaScript</span>
+                            <span><i class="uil uil-react"></i> React.js</span>
+                            <span><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                            <span><i class="uil uil-wind"></i> Tailwind</span>
                         </div>
                     </div>
                     <div class="skills-box">
@@ -155,90 +148,99 @@
                             <h3>Backend</h3>
                         </div>
                         <div class="skills-list">
-                            <span>PHP</span>
-                            <span>Laravel</span>
-                            <span>Node.js</span>
-                            <span>Firebase</span>
-
+                            <span><i class="fa-brands fa-php"></i> PHP</span>
+                            <span><i class="fa-brands fa-laravel"></i> Laravel</span>
+                            <span><i class="fa-brands fa-node-js"></i> Node.js</span>
+                            <span><i class="uil uil-server"></i> Express</span>
                         </div>
                     </div>
                     <div class="skills-box">
                         <div class="skills-header">
-                            <h3>Database</h3>
+                            <h3>Database & Cloud</h3>
                         </div>
                         <div class="skills-list">
-                            <span>MySQL</span>
-                            <span>MongoDB</span>
-                            <span>Firebase</span>
-
+                            <span><i class="uil uil-database"></i> MySQL</span>
+                            <span><i class="uil uil-database"></i> MongoDB</span>
+                            <span><i class="uil uil-fire"></i> Firebase</span>
+                            <span><i class="uil uil-cloud-upload"></i> REST APIs</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- -------------- PROJECT BOX ---------------- -->
         <section class="section" id="projects">
             <div class="top-header">
-                <h1>Projects</h1>
+                <h1>Featured Projects</h1>
             </div>
             <div class="project-container">
                 
                 <!-- E-commerce Project -->
                 <div class="project-box">
-                    <img src="./assets/images/palbest.jpg" alt="E-commerce Project Image" class="project-image">
-                    <h3>E-commerce <br>(Palbest Store) </h3>
-                    <p>A comprehensive online shopping platform featuring user authentication, product browsing, cart management, and secure payment integration.</p>
-                    <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1889243528689119232" class="project-link" target="_blank">View Details</a>
+                    <img src="./assets/images/palbestNew.png" alt="E-commerce Project" class="project-image">
+                    <div class="project-content">
+                        <h3>Palbest Store</h3>
+                        <p>A comprehensive e-commerce platform featuring user authentication, product browsing, cart management, and secure payment integration.</p>
+                        <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1889243528689119232" class="project-link" target="_blank">View Details</a>
+                    </div>
                 </div>
                 
                 <!-- Time Prayer Project -->
                 <div class="project-box">
-                    <img src="./assets/images/prayer.jpg" alt="Time Prayer Project Image" class="project-image">
-                    <h3>Time Prayers </h3>
-                    <p>Prayer Times Website built with React that shows real-time prayer times for different cities. Users can select a city, and the app fetches and displays prayer times using the Aladhan API.</p>
-                    <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1883109960901632000" class="project-link" target="_blank">View Details</a>
+                    <img src="./assets/images/prayer.jpg" alt="Time Prayer Project" class="project-image">
+                    <div class="project-content">
+                        <h3>Time Prayers</h3>
+                        <p>Real-time prayer times application built with React. Features city selection and integration with the Aladhan API for accurate timings.</p>
+                        <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1883109960901632000" class="project-link" target="_blank">View Details</a>
+                    </div>
                 </div>
         
                 <!-- Online Restaurant Project -->
                 <div class="project-box">
-                    <img src="./assets/images/restaurant.png" alt="Online Restaurant Project Image" class="project-image">
-                    <h3>Online Restaurant </h3>
-                    <p>An online food ordering system with features like menu management, real-time order tracking, and customer reviews.</p>
-                    <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1800785167575965696" class="project-link" target="_blank">View Details</a>
+                    <img src="./assets/images/restaurant1.png" alt="Online Restaurant Project" class="project-image">
+                    <div class="project-content">
+                        <h3>Online Restaurant</h3>
+                        <p>A food ordering system with menu management, real-time order tracking, and a customer review system.</p>
+                        <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1800785167575965696" class="project-link" target="_blank">View Details</a>
+                    </div>
                 </div>
         
-                <!-- Other Projects -->
+                <!-- School Management -->
                 <div class="project-box">
-                    <img src="./assets/images/school.png" alt="Other Project Image" class="project-image">
-                    <h3>School Management System</h3>
-                    <p> built using Laravel for backend processing and Firebase for real-time database management, authentication, and cloud storage. It provides user-friendly interface for managing  operations, handling of students, staff, classes, and subjects.</p>
-                    <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1889236917851488256" class="project-link" target="_blank">View Details</a>
+                    <img src="./assets/images/schoolNew.png" alt="School Management System" class="project-image">
+                    <div class="project-content">
+                        <h3>School Management</h3>
+                        <p>A Laravel & Firebase based system for managing students, staff, classes, and subjects with a user-friendly interface.</p>
+                        <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1889236917851488256" class="project-link" target="_blank">View Details</a>
+                    </div>
                 </div>
+
+                <!-- Hospital Management -->
                 <div class="project-box">
-                    <img src="./assets/images/hospital.png" alt="Hospital Management System Image" class="project-image">
-                    <h3>Hospital Management System (HMS)</h3>
-                    <p>Built using React for the frontend and Node.js for backend processing, this system provides a user-friendly interface for managing hospital operations, including patient records, appointments, and doctor schedules.</p>
-                    <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1889611133004251136" class="project-link" target="_blank">View Details</a>
+                    <img src="./assets/images/hospital1.png" alt="Hospital Management System" class="project-image">
+                    <div class="project-content">
+                        <h3>Hospital Management</h3>
+                        <p>Full-stack React & Node.js application for managing hospital operations, patient records, appointments, and doctor schedules.</p>
+                        <a href="https://www.upwork.com/freelancers/~01e9dacd60596cecbf?p=1889611133004251136" class="project-link" target="_blank">View Details</a>
+                    </div>
                 </div>
-                
                 
             </div>
         </section>
-    </section>
-
 
         <!-- -------------- CONTACT BOX ---------------- -->
         <section class="section" id="contact">
             <div class="top-header">
-                <h1>Get in touch</h1>
-                <span>Do you have a project in mind? Contact me here:</span>
+                <h1>Get in Touch</h1>
+                <span>Have a project in mind? Let's talk.</span>
             </div>
-            <div class="row" style="align-items: center; align-content: center;">
-                <div class="col">
+            <div class="row" style="justify-content: center;">
+                <div class="col" style="flex: 0 0 auto;">
                     <div class="contact-info">
-                        <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                        <p><i class="uil uil-envelope"></i> Email: ananomar51@gmail.com</p>
-                        <p><i class="uil uil-phone"></i> Tel: +970592766534</p>
+                        <h2>Contact Me</h2>
+                        <p><i class="uil uil-envelope"></i> ananomar51@gmail.com</p>
+                        <p><i class="uil uil-phone"></i> +970 592 766 534</p>
                     </div>
                 </div>
             </div>
@@ -248,32 +250,39 @@
 
     <!-- --------------- FOOTER --------------- -->
     <footer>
-        <!-- <div class="top-footer">
-            <p>Eng.Anan Jamal Abu Tawahena.</p>
-        </div> -->
+        <div class="top-footer">
+            <p>&copy; 2025 Anan Jamal. All rights reserved.</p>
+        </div>
     </footer>
-        <!-- ----- TYPING JS Link ----- -->
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-        <!-- ----- SCROLL REVEAL JS Link----- -->
-     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Hidden Download Link -->
+    <a id="downloadLink" href="./CV_ANAN ABU TAWAHENA.pdf" download style="display: none;"></a>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
  
-     <!-- ----- MAIN JS ----- -->
-     <script src="assets/js/main.js"></script>
-     <script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+    <script>
         function handleDownload(btnId, spinnerId) {
-            document.getElementById(btnId).addEventListener('click', function(event) {
-                event.preventDefault();
-                // Show the spinner
-                document.getElementById(spinnerId).style.display = 'inline-block';
-                // Trigger the download by clicking the hidden anchor
-                var downloadLink = document.getElementById('downloadLink');
-                downloadLink.click();
-                // Hide the spinner after a delay
-                setTimeout(function() {
-                    document.getElementById(spinnerId).style.display = 'none';
-                }, 1000);
-            });
+            const btn = document.getElementById(btnId);
+            if (btn) {
+                btn.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    // Show the spinner
+                    document.getElementById(spinnerId).style.display = 'inline-block';
+                    // Trigger the download by clicking the hidden anchor
+                    var downloadLink = document.getElementById('downloadLink');
+                    downloadLink.click();
+                    // Hide the spinner after a delay
+                    setTimeout(function() {
+                        document.getElementById(spinnerId).style.display = 'none';
+                    }, 1000);
+                });
+            }
         }
 
         // Initialize each button with its spinner
@@ -281,7 +290,6 @@
         handleDownload('downloadBtn2', 'spinner2');
         handleDownload('downloadBtn3', 'spinner3');
     </script>
- </body>
- </html>
+    </div>
 </body>
 </html>
