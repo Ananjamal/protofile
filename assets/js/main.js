@@ -168,7 +168,7 @@ window.addEventListener("load", () => {
       .split("")
       .map((char, i) => {
         if (char === " ") return `<span style="width: 1rem;"></span>`;
-        return `<span style="animation-delay: ${i * 0.08}s">${char}</span>`;
+        return `<span style="animation-delay: ${i * 0.05}s">${char}</span>`;
       })
       .join("");
   }
@@ -181,5 +181,5 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       preloader.style.display = "none";
     }, 800);
-  }, 4000); // Wait for name animation to finish
+  }, 2000); // Faster display time
 });
