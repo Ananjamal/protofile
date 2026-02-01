@@ -54,7 +54,7 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 800,
-  reset: true,
+  reset: false,
 });
 
 /* -- HOME -- */
@@ -78,7 +78,7 @@ const srLeft = ScrollReveal({
   origin: "left",
   distance: "60px",
   duration: 800,
-  reset: true,
+  reset: false,
 });
 
 srLeft.reveal(".about-info", { delay: 50 });
@@ -89,7 +89,7 @@ const srRight = ScrollReveal({
   origin: "right",
   distance: "60px",
   duration: 800,
-  reset: true,
+  reset: false,
 });
 
 srRight.reveal(".skills-box", { delay: 50 });

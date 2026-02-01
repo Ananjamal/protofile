@@ -145,6 +145,8 @@ body {
 /* ----- NAVIGATION BAR ----- */
 nav {
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -239,10 +241,11 @@ nav {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 100vh;
   padding-inline: 10%;
   padding-top: 80px;
+  gap: 2rem;
 }
 
 .featured-text {
