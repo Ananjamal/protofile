@@ -140,10 +140,10 @@ const getCurrentIcon = () =>
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    darkTheme
+    darkTheme,
   );
   themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-    iconTheme
+    iconTheme,
   );
 }
 
@@ -155,4 +155,31 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+});
+
+/* ----- PRELOADER JS ----- */
+window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  const preName = document.getElementById("preName");
+
+  if (preName) {
+    const nameText = preName.getAttribute("data-name");
+    preName.innerHTML = nameText
+      .split("")
+      .map((char, i) => {
+        if (char === " ") return `<span style="width: 1rem;"></span>`;
+        return `<span style="animation-delay: ${i * 0.08}s">${char}</span>`;
+      })
+      .join("");
+  }
+
+  // Minimum display time for luxury feel
+  setTimeout(() => {
+    preloader.classList.add("fade-out");
+
+    // Remove from DOM after transition
+    setTimeout(() => {
+      preloader.style.display = "none";
+    }, 800);
+  }, 4000); // Wait for name animation to finish
 });
